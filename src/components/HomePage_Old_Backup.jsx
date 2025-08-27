@@ -189,7 +189,7 @@ const DashboardPage = () => {
   const drawerWidthLeft = getDrawerWidthLeft(isMobile, isTablet);
   const drawerWidthRight = getDrawerWidthRight(isMobile, isTablet);
 
-  const API_BASE_URL = "http://192.168.224.163:8000";
+  const API_BASE_URL = "https://loan-backend-production-aece.up.railway.app";
 
   const fetchApplicants = async () => {
     try {

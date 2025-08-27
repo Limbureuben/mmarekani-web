@@ -1,4 +1,4 @@
-export const API_BASE_URL = "http://192.168.224.163:8000"
+export const API_BASE_URL = "https://loan-backend-production-aece.up.railway.app"
 
 export const getStoredValue = (key, defaultValue) => {
   try {

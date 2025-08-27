@@ -6,7 +6,7 @@ export async function getReceipts() {
       throw new Error("Authentication required");
     }
   try {
-    const response = await fetch("http://172.31.7.70:8000/api/loan-applications/receipts/", {
+    const response = await fetch("https://loan-backend-production-aece.up.railway.app/api/loan-applications/receipts/", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -41,7 +41,7 @@ export async function getReceipts() {
 export async function deleteReceipt(id) {
   const token = localStorage.getItem("access");
   try {
-    const response = await fetch(`http://192.168.224.163:8000/api/loan-applications/receipts/${id}/`, {
+    const response = await fetch(`https://loan-backend-production-aece.up.railway.app/api/loan-applications/receipts/${id}/`, {
       method: "DELETE",
       headers: {
         "Authorization": `Bearer ${token}`,
